@@ -2,6 +2,7 @@ shinyUI(
   pageWithSidebar(
     # Application title
     headerPanel("BMI Calculation"),
+    # Key in your height (in metres) and weight (in kg) to calculate your BMI
     sidebarPanel(
       numericInput('id1', 'Height m', 0, min = 0, max = 2, step = 0.1),
       numericInput('id2', 'Weight kg', 0, min = 0.0, max = 200, step = 0.1),
